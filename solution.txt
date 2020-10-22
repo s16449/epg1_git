@@ -1,0 +1,25 @@
+mkdir fork
+git clone https://github.com/s16449/epg1_git.git
+cd epg1_git/
+git checkout -b hw-s16449
+git log
+git checkout rebase-me
+git rebase hw-s16449
+git log
+git checkout hw-s16449
+git merge rebase-me
+git log
+git merge origin/merge-me
+git status
+nano README.md
+git status
+git add README.md
+git status
+git commit -m "Zlaczenie tekstu"
+git status
+nano solution.txt
+git add solution.txt
+git commit -m "Dodanie solution.txt"
+git status
+git log
+git push --set-upstream origin hw-s16449
